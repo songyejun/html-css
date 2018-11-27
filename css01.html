@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS속성 - font 관련 속성</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Sans+KR");
+        @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Nanum+Myeongjo|Noto+Sans+KR');
+        @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Nanum+Myeongjo');
+        @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Nanum+Myeongjo|Nanum+Pen+Script');
+/*
+        font-family: 'Nanum Gothic', sans-serif;
+        font-family: 'Nanum Myeongjo', serif;
+        font-family: 'Nanum Pen Script', cursive;
+        
+*/
+
+/*
+        웹의 안전 폰트 : 웹의 기본 폰트
+        sans-serif:고딕계열, serif:명조계열, cursive:궁서계열, monospace:가로세로비율이같은계열
+*/
+        body, html { font-family: 'Nanum Gothic', sans-serif; font-size: 14px; } 
+        
+                 
+        .font1 { font-family: 'Nanum Gothic', sans-serif; }
+        .font2 { font-family: 'Noto+Sans+KR', cursive; }
+        .font3 { font-family: 'Nanum+Myeongjo', serif; }
+        .em1 { font-size: 3.5em; }
+        .per1 { font-size: 200%; }
+        .px1 { font-size: 20px; }
+        .pt1 { font-size: 20pt; }
+        .vh { font-size: 5vh; } /*높이에 따라 바뀜*/
+        .vw { font-size: 5vw; } /*폭에 대해 바뀜*/
+        .rem { font-size: 3.5rem; } /*부모가 em으로 감싸지고 자식이 rem 일때 효과*/
+        .wt1 { font-weight: 900; font-size: 24pt;/*100~900 100단위 씩 또는 bold*/ }
+        .wt2 { font-weight: bold; font-size: 24pt;/*bold, bolder, normal, light, lighter */}
+        .italic1 { font-style: italic;}
+        .variant1 { font-variant: small-caps; } /* 영문 대문자를 소문자 크기로 정렬 */
+        .ht1 { line-height: 1.6; }/*행 높이*/
+        .ht2 { line-height: 100px; }
+        .fnt1 { font-size: 14pt; }
+        .fn1 { font: bold italic 20pt/1.6 "돋움", "dotum", sans-serif; }
+                     /* weight style size/line-height family */
+        .fn2 { font: lighter 24px/1.2 'Noto+Sans+KR', cursive; }
+    </style>
+</head>
+<body>
+<p class="font1">송예준</p>
+<p class="font2">송예준</p>
+<p class="font3">송예준</p>
+<p class="em1">송예준</p>
+<p class="per1">송예준</p>
+<div class="px1">송예준</div>
+<p class="pt1">송예준</p>
+<p class="vh">송예준</p>
+<p class="vw">송예준</p>
+<p class="rem">송예준</p>
+<p class="wt1">송예준</p>
+<p class="wt2">송예준</p>
+<p class="italic1">Song Ye Jun</p>
+<p class="variant1">Song Ye Jun</p>
+<p class="ht1">송예준</p>
+<p class="ht2">송예준</p>
+<p class="fnt1">송예준</p>
+<p class="fnt2">송예준</p>
+<div class="font4"><img src="./images/font4.png" alt="폰트"></div>  
+</body>
+</html>
